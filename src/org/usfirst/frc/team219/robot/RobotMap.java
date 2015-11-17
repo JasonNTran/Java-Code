@@ -35,7 +35,7 @@ public class RobotMap {
 	
 	public static void init()
 	{
-		motor/*_FrontLeft*/ = new CANTalon(MOTOR_PORT/*FL*/);
+		motor/*_FrontLeft*/ = new CANTalon(MOTOR_PORT/*_FL*/);
 		//motor_FrontRight = new CANTalon(MOTOR_PORT_FR);
 		//motor_BackLeft = new CANTalon(MOTOR_PORT_BL);
 		//motor_BackRight = new CANTalon(MOTOR_PORT_BR);
