@@ -5,7 +5,8 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import org.usfirst.frc.team219.robot.subsystems.Motor;
+
+import org.usfirst.frc.team219.robot.subsystems.Drive;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -17,7 +18,7 @@ import org.usfirst.frc.team219.robot.subsystems.Motor;
 public class Robot extends IterativeRobot {
 
 	public static OI oi;
-	public static Motor motor;;
+	public static Drive drive;
 
     Command autonomousCommand;
 
@@ -27,7 +28,7 @@ public class Robot extends IterativeRobot {
      */
     public void robotInit() {
     	RobotMap.init();
-        motor = new Motor();
+        drive = new Drive();
 		oi = new OI();
         // instantiate the command used for the autonomous period
 
