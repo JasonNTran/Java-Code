@@ -3,14 +3,13 @@ package org.usfirst.frc.team219.robot.commands;
 
 
 import org.usfirst.frc.team219.robot.Robot;
-import org.usfirst.frc.team219.robot.RobotMap;
-
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
 
 public class RunMotor extends Command {
 	
 	public RunMotor(){
-		requires(Robot.motor);
+		requires(Robot.drive);
 	}
 
 	@Override
@@ -21,24 +20,25 @@ public class RunMotor extends Command {
 	@Override
 	protected void execute() {
 		// TODO Auto-generated method stub
-		Robot.motor.controlMotor();
+		Joystick joystickDrive = Robot.oi.driveStick;
+		Robot.drive.controlMotor(joystickDrive);
 	}
 
 	@Override
 	protected boolean isFinished() {
-		return true;
+		return false;
 	}
 
 	@Override
 	protected void end() {
 		// TODO Auto-generated method stub
-		
+		Robot.drive.stop();
 	}
 
 	@Override
 	protected void interrupted() {
 		// TODO Auto-generated method stub
-		
+		end();
 	}
 
 }
