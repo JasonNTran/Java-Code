@@ -15,18 +15,18 @@ public class RobotMap {
     // public static int rightMotor = 2;
 	
 	/*
-	 *drive train
-	 *delete comments for puppies 
+	 *drive train for puppies tank drive
+	 *
 	 */
-	public final static int MOTOR_PORT/*_FL*/ = 27;
-	//public final static int MOTOR_PORT_FR = /*insert port here*/
-	//public final static int MOTOR_PORT_BL = /*insert port here*/
-	//public final static int MOTOR_PORT_BR = /*insert port here*/
-	public static CANTalon motor/*_FrontLeft*/;
-	//public static CANTalon motor_FrontRight;
-	//public static CANTalon motor_BackLeft;
-	//public static CANTalon motor_BackRight;
-	//public static RobotDrive driveTrain;
+	public final static int MOTOR_PORT_FL = 27;
+	public final static int MOTOR_PORT_BL = 28;
+	public final static int MOTOR_PORT_FR = 29;
+	public final static int MOTOR_PORT_BR = 30;
+	public static CANTalon motor_FrontLeft;
+	public static CANTalon motor_FrontRight;
+	public static CANTalon motor_BackLeft;
+	public static CANTalon motor_BackRight;
+	public static RobotDrive driveTrain;
     
     // If you are using multiple modules, make sure to define both the port
     // number and the module. For example you with a rangefinder:
@@ -35,11 +35,11 @@ public class RobotMap {
 	
 	public static void init()
 	{
-		motor/*_FrontLeft*/ = new CANTalon(MOTOR_PORT/*_FL*/);
-		//motor_FrontRight = new CANTalon(MOTOR_PORT_FR);
-		//motor_BackLeft = new CANTalon(MOTOR_PORT_BL);
-		//motor_BackRight = new CANTalon(MOTOR_PORT_BR);
-		//driveTrain(motor_FrontLeft, motor_BackLeft, motor_FrontRight, motor_BackRight);
+		motor_FrontLeft = new CANTalon(MOTOR_PORT_FL);
+		motor_FrontRight = new CANTalon(MOTOR_PORT_FR);
+		motor_BackLeft = new CANTalon(MOTOR_PORT_BL);
+		motor_BackRight = new CANTalon(MOTOR_PORT_BR);
+		driveTrain(motor_FrontLeft, motor_BackLeft, motor_FrontRight, motor_BackRight);
 		
 	}
 }
