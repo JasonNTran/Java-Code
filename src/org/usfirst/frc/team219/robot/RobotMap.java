@@ -23,8 +23,8 @@ public class RobotMap {
 	public final static int MOTOR_PORT_FR = 29;
 	public final static int MOTOR_PORT_BR = 30;
 	public static CANTalon motor_FrontLeft;
-	public static CANTalon motor_FrontRight;
 	public static CANTalon motor_BackLeft;
+	public static CANTalon motor_FrontRight;
 	public static CANTalon motor_BackRight;
 	public static RobotDrive driveTrain;
     
