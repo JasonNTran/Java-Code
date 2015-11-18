@@ -1,6 +1,7 @@
 package org.usfirst.frc.team219.robot;
 
 import edu.wpi.first.wpilibj.CANTalon;
+import edu.wpi.first.wpilibj.RobotDrive;
 
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
@@ -39,8 +40,9 @@ public class RobotMap {
 		motor_FrontRight = new CANTalon(MOTOR_PORT_FR);
 		motor_BackLeft = new CANTalon(MOTOR_PORT_BL);
 		motor_BackRight = new CANTalon(MOTOR_PORT_BR);
-		driveTrain(motor_FrontLeft, motor_BackLeft, motor_FrontRight, motor_BackRight);
+		driveTrain = new RobotDrive(motor_FrontLeft, motor_BackLeft, motor_FrontRight, motor_BackRight);
 		
 	}
-}
 
+
+}
