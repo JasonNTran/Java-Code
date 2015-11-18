@@ -43,7 +43,7 @@ public class Drive extends Subsystem
 	 */
 	public void controlMotor(Joystick joystick)
 	{
-		double joystickY_Left = joystick.getRawAxis(2);
+		double joystickY_Left = joystick.getRawAxis(1);
 		double joystickY_Right = joystick.getRawAxis(5);
 		if(Math.abs(joystickY_Left) <= .2)
 		{
