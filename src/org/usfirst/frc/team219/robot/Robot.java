@@ -8,6 +8,12 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 import org.usfirst.frc.team219.robot.subsystems.Drive;
 
+/*
+* Code was written by Mark Szewczuk
+*
+* Help from Jason Tran, Justin Westley, Jace Beaudoin, Mr. Detrick
+*/
+
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to each mode, as described in the IterativeRobot
